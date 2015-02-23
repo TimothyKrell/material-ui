@@ -14,7 +14,8 @@ var Calendar = React.createClass({
 
   propTypes: {
     initialDate: React.PropTypes.object,
-    isActive: React.PropTypes.bool
+    isActive: React.PropTypes.bool,
+    onDayTouchTap: React.PropTypes.func
   },
 
   windowListeners: {
@@ -135,6 +136,7 @@ var Calendar = React.createClass({
 
   _handleDayTouchTap: function(e, date) {
     this._setSelectedDate(date);
+    if (this.props.onDayTouchTap) this.props.onDayTouchTap(e, date);
   },
 
   _handleLeftTouchTap: function() {
