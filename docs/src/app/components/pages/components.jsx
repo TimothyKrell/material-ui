@@ -6,6 +6,7 @@ var Components = React.createClass({
   render: function() {
     var menuItems = [
       { route: 'buttons', text: 'Buttons'},
+      { route: 'calendar', text: 'Calendar'},
       { route: 'date-picker', text: 'Date Picker'},
       { route: 'dialog', text: 'Dialog'},
       { route: 'dropdown-menu', text: 'Dropdown Menu'},

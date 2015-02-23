@@ -1,6 +1,7 @@
 module.exports = {
   AppBar: require('./js/app-bar'),
   AppCanvas: require('./js/app-canvas'),
+	Calendar: require('./js/date-picker/calendar'),
   Checkbox: require('./js/checkbox'),
   DatePicker: require('./js/date-picker/date-picker'),
   Dialog: require('./js/dialog'),
